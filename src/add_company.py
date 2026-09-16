@@ -22,6 +22,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO_ROOT / "config.yaml"
 
 
+class CompanyAddError(Exception):
+    """A company could not be added (duplicate, bad URL, fetch failure)."""
+
+
 def _normalize_url(url: str) -> str:
     return url.strip().rstrip("/").lower()
 
@@ -55,14 +59,19 @@ def _append_to_config(name: str, careers_url: str) -> None:
     CONFIG_PATH.write_text("".join(lines))
 
 
-def add_company(name: str, careers_url: str) -> None:
+def add_company(name: str, careers_url: str) -> tuple[str, int, int]:
+    """Validate and add one company. Returns (ats, job_count, matched_count).
+
+    Raises CompanyAddError (never sys.exit) so callers -- the single-company
+    CLI below, or a batch runner -- can decide how to handle a failure.
+    """
     config = load_config(CONFIG_PATH)
 
     for company in config.companies:
         if company.name.strip().lower() == name.strip().lower():
-            raise SystemExit(f"A company named {company.name!r} is already in config.yaml.")
+            raise CompanyAddError(f"a company named {company.name!r} is already in config.yaml")
         if _normalize_url(company.careers_url) == _normalize_url(careers_url):
-            raise SystemExit(f"{careers_url!r} is already tracked as {company.name!r}.")
+            raise CompanyAddError(f"{careers_url!r} is already tracked as {company.name!r}")
 
     print(f"Detecting ATS for {careers_url} ...")
     ats = detect_ats(careers_url)
@@ -71,11 +80,8 @@ def add_company(name: str, careers_url: str) -> None:
     print("Fetching jobs to validate the URL ...")
     try:
         jobs = fetch_jobs(ats, name, careers_url)
-    except Exception as exc:  # noqa: BLE001 - report and abort, don't add a broken entry
-        raise SystemExit(
-            f"Could not fetch jobs from {careers_url!r}: {exc}\n"
-            "Not added -- fix the URL and try again."
-        )
+    except Exception as exc:  # noqa: BLE001 - report, don't add a broken entry
+        raise CompanyAddError(f"could not fetch jobs from {careers_url!r}: {exc}")
 
     matched = filter_jobs(jobs, config.titles, config.locations)
     print(f"  -> {len(jobs)} jobs found, {len(matched)} match your current filters")
@@ -83,11 +89,16 @@ def add_company(name: str, careers_url: str) -> None:
     _append_to_config(name, careers_url)
     print(f"\nAdded {name!r} to config.yaml. Run `python3 -m src.main` to include it in today's scan.")
 
+    return ats, len(jobs), len(matched)
+
 
 def main() -> None:
     if len(sys.argv) != 3:
         raise SystemExit('Usage: python3 -m src.add_company "<Company Name>" "<careers_url>"')
-    add_company(sys.argv[1], sys.argv[2])
+    try:
+        add_company(sys.argv[1], sys.argv[2])
+    except CompanyAddError as exc:
+        raise SystemExit(f"{exc}\nNot added -- fix the URL and try again.")
 
 
 if __name__ == "__main__":

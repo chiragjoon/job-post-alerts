@@ -203,6 +203,34 @@ Out of scope for this pass: removing/editing existing companies, editing
 filters, any web UI — this is purely "add one company, safely," matching
 the file-based, no-server architecture (§ Architecture).
 
+## 9. Bulk-adding companies (Markdown list)
+
+For adding several companies at once instead of one CLI call per
+company: `companies_to_add.md` at the repo root holds a simple Markdown
+table (`| Name | Careers URL |`) the user fills in by hand, plus
+`python3 -m src.bulk_add_companies` to process it.
+
+- Reuses the same per-company logic as `src.add_company` (ATS detection,
+  live dry-run fetch, duplicate check) for every row — no separate
+  validation path to keep in sync.
+- Processes rows independently: one bad URL doesn't block the rest of
+  the batch, same "loud failures, isolated per item" principle as the
+  daily scan itself (§5).
+- Successfully added rows are removed from `companies_to_add.md`
+  automatically; rows that fail (bad URL, duplicate) are left in place
+  untouched, with the reason printed to the console — so a rerun after
+  fixing a URL doesn't require retyping the whole list.
+- `src.add_company`'s single-company function is refactored to raise a
+  plain exception on failure instead of calling `sys.exit`, so the bulk
+  runner can catch per-row failures and keep going; the single-company
+  CLI entry point catches that exception and converts it to `sys.exit`
+  itself, so its behavior from the outside is unchanged.
+
+Out of scope: editing/removing existing companies in bulk, any format
+other than the one Markdown table (e.g. CSV upload), running as part of
+the scheduled Action (this stays a manually-run local command, same as
+`add_company`).
+
 ## Build order
 
 1. Config loader + schema (with variant groups)

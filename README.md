@@ -32,6 +32,21 @@ the fetch fails.
 New company won't show up on the site until the next scan runs (daily,
 or trigger it manually — see below).
 
+## Adding several companies at once
+
+Fill in the table in [`companies_to_add.md`](companies_to_add.md) (one
+row per company: name + careers URL), then run:
+
+```
+source .venv/bin/activate
+python3 -m src.bulk_add_companies
+```
+
+Each row gets the same validation as above. Rows that succeed are
+removed from the file automatically; rows that fail (bad URL, duplicate)
+are left in place with the reason printed, so you can fix and rerun
+without retyping the rest.
+
 ## Running a scan manually
 
 ```
