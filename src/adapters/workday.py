@@ -10,6 +10,11 @@ The CXS endpoint is:
 
 from __future__ import annotations
 
+import json
+import re
+import threading
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
@@ -18,6 +23,12 @@ from .base import REQUEST_TIMEOUT, USER_AGENT, Job
 
 PAGE_SIZE = 20  # Workday's CXS API rejects limit > 20 with a 400
 MAX_OFFSET = 5000  # safety cap so a huge/misbehaving board can't loop forever
+RESOLVE_WORKERS = 8  # concurrent detail-fetch requests; keep modest, single ATS backend
+
+# The list endpoint collapses a multi-location posting's locationsText
+# down to a bare count ("2 Locations") instead of naming them -- see
+# resolve_ambiguous_locations() and docs/PLAN.md §10.
+LOCATION_COUNT_PATTERN = re.compile(r"^\d+ Locations?$")
 
 
 def _parse_workday_url(careers_url: str) -> tuple[str, str, str, str]:
@@ -86,5 +97,97 @@ def fetch_jobs(company_name: str, careers_url: str) -> list[Job]:
         offset += PAGE_SIZE
         if len(postings) < PAGE_SIZE or new_count == 0 or offset >= MAX_OFFSET:
             break
+
+    return jobs
+
+
+def _job_detail_url(job_url: str) -> str:
+    parsed = urlparse(job_url)
+    segments = [seg for seg in parsed.path.split("/") if seg]
+    if len(segments) < 3:
+        raise ValueError(f"not a Workday job URL: {job_url!r}")
+    tenant = parsed.netloc.split(".")[0]
+    site = segments[1]
+    external_path = "/" + "/".join(segments[2:])
+    return f"https://{parsed.netloc}/wday/cxs/{tenant}/{site}{external_path}"
+
+
+def _cache_key(job: Job) -> str:
+    # Company-scoped for the same reason as diff.py's seen-key: Workday
+    # requisition numbers aren't globally unique across tenants.
+    return f"{job.company}::{job.id}"
+
+
+def load_location_cache(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def save_location_cache(path: Path, cache: dict[str, str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(cache, indent=2, sort_keys=True))
+
+
+def _fetch_detail_location(job: Job) -> str | None:
+    resp = requests.get(
+        _job_detail_url(job.url),
+        timeout=REQUEST_TIMEOUT,
+        headers={"User-Agent": USER_AGENT},
+    )
+    resp.raise_for_status()
+    info = resp.json().get("jobPostingInfo", {})
+    locations = ([info["location"]] if info.get("location") else []) + list(
+        info.get("additionalLocations") or []
+    )
+    return "; ".join(locations) if locations else None
+
+
+def resolve_ambiguous_locations(jobs: list[Job], cache: dict[str, str]) -> list[Job]:
+    """Mutates jobs in place: any Workday job whose location is a bare
+    count ("2 Locations") gets the real place names via the per-job
+    detail endpoint -- or from `cache` if already resolved on a previous
+    run, so the steady-state daily cost is just newly-seen ambiguous
+    postings, not all of them every time. `cache` is mutated in place
+    with new results; only a successful resolution is cached (a timeout
+    isn't, so it's retried next run). See docs/PLAN.md §10.
+
+    Cache hits are resolved inline (free); cache misses are the only
+    thing dispatched to the thread pool, so a fully-warm cache does no
+    network work and returns immediately.
+    """
+    to_resolve: list[Job] = []
+    for job in jobs:
+        if "myworkdayjobs.com" not in job.url:
+            continue
+        if not LOCATION_COUNT_PATTERN.match(job.location.strip()):
+            continue
+
+        key = _cache_key(job)
+        if key in cache:
+            job.location = cache[key]
+        else:
+            to_resolve.append(job)
+
+    if not to_resolve:
+        return jobs
+
+    cache_lock = threading.Lock()
+
+    def resolve_one(job: Job) -> None:
+        try:
+            location = _fetch_detail_location(job)
+            if location:
+                job.location = location
+                with cache_lock:
+                    cache[_cache_key(job)] = location
+        except Exception as exc:  # noqa: BLE001 - leave the ambiguous text, don't break the run
+            print(f"  [warn] could not resolve location for {job.title!r} ({job.company}): {exc}")
+
+    with ThreadPoolExecutor(max_workers=RESOLVE_WORKERS) as executor:
+        list(executor.map(resolve_one, to_resolve))
 
     return jobs

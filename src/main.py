@@ -12,13 +12,15 @@ from pathlib import Path
 
 from . import diff
 from .adapters import Job, fetch_jobs
+from .adapters.workday import load_location_cache, resolve_ambiguous_locations, save_location_cache
 from .ats_detect import detect_ats
 from .config import load_config
-from .filter import filter_jobs
+from .filter import match_location, match_title
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO_ROOT / "config.yaml"
 SEEN_PATH = REPO_ROOT / "data" / "seen.json"
+LOCATION_CACHE_PATH = REPO_ROOT / "data" / "location_cache.json"
 DOCS_DATA_DIR = REPO_ROOT / "docs" / "data"
 JOBS_PATH = DOCS_DATA_DIR / "jobs.json"
 NEW_TODAY_PATH = DOCS_DATA_DIR / "new_today.json"
@@ -41,6 +43,7 @@ def _load_previous_status() -> dict:
 def run() -> None:
     config = load_config(CONFIG_PATH)
     previous_status = _load_previous_status()
+    location_cache = load_location_cache(LOCATION_CACHE_PATH)
 
     now = _now_iso()
     company_status: dict[str, dict] = {}
@@ -50,7 +53,12 @@ def run() -> None:
         try:
             ats = detect_ats(company.careers_url)
             jobs = fetch_jobs(ats, company.name, company.careers_url)
-            matched = filter_jobs(jobs, config.titles, config.locations)
+            title_matched = match_title(jobs, config.titles)
+            # Must run after title matching (no point resolving locations
+            # for jobs that don't match anyway) and before location
+            # matching (that's the thing it fixes) -- see PLAN.md §10.
+            title_matched = resolve_ambiguous_locations(title_matched, location_cache)
+            matched = match_location(title_matched, config.locations)
             all_matches.extend(matched)
 
             company_status[company.name] = {
@@ -87,6 +95,7 @@ def run() -> None:
     )
 
     diff.write_seen(SEEN_PATH, all_matches, seen_ids)
+    save_location_cache(LOCATION_CACHE_PATH, location_cache)
 
     print(f"\n{len(all_matches)} total matches, {len(new_jobs)} new today.")
 

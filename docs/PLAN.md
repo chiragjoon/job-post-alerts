@@ -21,6 +21,7 @@ job-post-alerts/
     diff.py                   # compare against seen.json, find new jobs
   data/
     seen.json                 # all job IDs ever surfaced (internal, not served)
+    location_cache.json       # resolved Workday locations, keyed by company::id (§10)
   docs/
     index.html                # reads ./data/*.json
     data/
@@ -230,6 +231,72 @@ Out of scope: editing/removing existing companies in bulk, any format
 other than the one Markdown table (e.g. CSV upload), running as part of
 the scheduled Action (this stays a manually-run local command, same as
 `add_company`).
+
+## 10. Fixing ambiguous Workday locations ("N Locations")
+
+**Problem, confirmed against live data:** Workday's job-list endpoint
+(`/wday/cxs/.../jobs`, used by `workday.py`) returns `locationsText` as a
+literal count summary — `"2 Locations"`, `"5 Locations"` — for any
+posting with more than one location, instead of naming them. A
+single-location posting shows the real place (`"Israel, Yokneam"`); a
+multi-location one doesn't. Checked against the current dataset: 455 of
+1279 matched jobs are affected, all from NVIDIA (the only Workday
+company configured) — 0 from Greenhouse/Ashby/Lever/SmartRecruiters/
+Teamtailor, so this is Workday-specific, not a general filtering bug.
+
+This silently breaks location filtering: a job open in "Bangalore" among
+3 locations shows up as `"3 Locations"`, which a substring match against
+`["Bangalore"]` will never hit — the job just vanishes instead of
+matching.
+
+**Fix:** Workday also exposes a per-job detail endpoint —
+`GET /wday/cxs/{tenant}/{site}/job/{externalPath}` — confirmed live to
+return `jobPostingInfo.location` (primary) and
+`jobPostingInfo.additionalLocations` (array of the rest). When a job's
+`locationsText` matches `^\d+ Locations?$`, fetch this endpoint and join
+the real location strings instead.
+
+**Where this runs in the pipeline matters:** it has to happen *after*
+title filtering (no point resolving locations for jobs that don't match
+the title filter anyway) but *before* location filtering (that's the
+thing being fixed). This means `filter.py`'s single combined
+`filter_jobs()` needs to split into separate title/location matching
+steps, with a resolution pass for ambiguous Workday locations in between,
+orchestrated from `main.py`.
+
+**Cost, measured against the current config:** bounded to jobs that
+already passed the title filter *and* have the ambiguous pattern —
+currently ~455 extra requests, all against NVIDIA. Measured live: this
+added ~15-20 minutes to the daily scan (on top of the ~3 min the rest of
+the pipeline, including NVIDIA's ~100-request list fetch, takes). Without
+caching this cost recurs *every day*, re-resolving jobs whose location
+was already known yesterday — see Caching below.
+
+**Caching, to avoid paying that cost daily:** `data/location_cache.json`
+(internal, not served, alongside `seen.json`) maps `"{company}::{job.id}"`
+→ resolved location string — same company-scoped key as diffing, for the
+same reason (Workday requisition IDs aren't globally unique). Before
+resolving a job, check the cache first; only call the detail endpoint on
+a cache miss, and only write to the cache on a successful resolution (a
+timeout isn't cached, so it's retried the next run instead of staying
+unresolved forever). The cache only grows — like `seen.json`, stale
+entries for closed postings just sit there unused, which is harmless.
+This drops the steady-state daily cost from ~455 requests to roughly
+"however many *new* ambiguous postings appeared since yesterday." The
+cache file must be committed by the daily-scan workflow (same as
+`seen.json`) or it resets every run and defeats the point.
+
+**Concurrency, for the remaining cold-cache cost:** even with caching, a
+newly-added Workday company with many multi-location postings still pays
+the resolution cost once, sequentially that would be ~2s/request. Cache
+misses are resolved with a `ThreadPoolExecutor` (`RESOLVE_WORKERS = 8`)
+instead of one at a time; cache hits are resolved inline with no network
+call and never touch the pool. 8 was picked as "meaningfully faster
+without hammering a single ATS backend too hard" — not load-tested
+against Workday's actual rate limits.
+
+Out of scope: applying this to any other ATS (none currently show the
+problem); resolving locations for title-filtered-out jobs (wasted work).
 
 ## Build order
 

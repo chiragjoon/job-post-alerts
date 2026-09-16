@@ -19,9 +19,18 @@ def _matches_any_group(text: str, groups: list[list[str]]) -> bool:
     return any(variant.lower() in text_lower for group in groups for variant in group)
 
 
+def match_title(jobs: list[Job], titles: list[list[str]]) -> list[Job]:
+    return [job for job in jobs if _matches_any_group(job.title, titles)]
+
+
+def match_location(jobs: list[Job], locations: list[list[str]]) -> list[Job]:
+    return [job for job in jobs if _matches_any_group(job.location, locations)]
+
+
 def filter_jobs(jobs: list[Job], titles: list[list[str]], locations: list[list[str]]) -> list[Job]:
-    return [
-        job
-        for job in jobs
-        if _matches_any_group(job.title, titles) and _matches_any_group(job.location, locations)
-    ]
+    """Convenience wrapper for callers (e.g. add_company's preview count)
+    that don't need a resolution step between title and location matching.
+    main.py calls match_title/match_location separately instead -- see
+    docs/PLAN.md §10.
+    """
+    return match_location(match_title(jobs, titles), locations)
