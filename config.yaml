@@ -1,0 +1,31 @@
+# Companies to track. `careers_url` should point directly at the ATS-hosted
+# board when possible (e.g. boards.greenhouse.io/..., jobs.lever.co/...,
+# jobs.ashbyhq.com/...) -- ATS detection also works against a company's own
+# domain, but direct links are more reliable.
+#
+# These are real, working examples covering every dedicated adapter
+# (Greenhouse/Ashby/Lever/Workday/SmartRecruiters/Teamtailor) so the
+# pipeline is testable out of the box. Replace with the companies you
+# actually want to track.
+companies:
+  - name: Figma
+    careers_url: https://boards.greenhouse.io/figma
+  - name: Notion
+    careers_url: https://jobs.ashbyhq.com/notion
+  - name: Lever
+    careers_url: https://jobs.lever.co/lever
+  - name: NVIDIA
+    careers_url: https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite
+  - name: Primark
+    careers_url: https://jobs.smartrecruiters.com/Primark
+  - name: Lunar
+    careers_url: https://lunar.teamtailor.com/jobs
+
+# Filters use "variant groups": each inner list is one logical thing to
+# match (any variant in the group counts as a match). Matching is a broad,
+# case-insensitive substring check -- start broad, tighten once you see
+# what comes through. An empty list means "no filter" (matches everything).
+filters:
+  titles:
+    - ["Engineer"]
+  locations: []

@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-09-16T12:25:06+00:00",
+  "companies": {
+    "Figma": {
+      "status": "success",
+      "ats": "greenhouse",
+      "job_count": 154,
+      "matched_count": 30,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    },
+    "Notion": {
+      "status": "success",
+      "ats": "ashby",
+      "job_count": 127,
+      "matched_count": 29,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    },
+    "Lever": {
+      "status": "success",
+      "ats": "lever",
+      "job_count": 0,
+      "matched_count": 0,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    },
+    "NVIDIA": {
+      "status": "success",
+      "ats": "workday",
+      "job_count": 2000,
+      "matched_count": 1217,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    },
+    "Primark": {
+      "status": "success",
+      "ats": "smartrecruiters",
+      "job_count": 890,
+      "matched_count": 0,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    },
+    "Lunar": {
+      "status": "success",
+      "ats": "teamtailor",
+      "job_count": 12,
+      "matched_count": 4,
+      "last_success": "2026-09-16T12:25:06+00:00",
+      "error": null
+    }
+  }
+}

@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Job Alerts</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --border: #e2e2e2;
+    --card-bg: #f7f7f7;
+    --ok: #1a9c4a;
+    --err: #d33;
+    --accent: #2563eb;
+    --new-bg: #fff8e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #eaeaea;
+      --muted: #9a9a9a;
+      --border: #2a2d33;
+      --card-bg: #1c1f24;
+      --ok: #3ecf72;
+      --err: #ff6b6b;
+      --accent: #6ea8ff;
+      --new-bg: #2a2410;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 16px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 2px; }
+  .subtitle { color: var(--muted); font-size: 0.85rem; margin-bottom: 16px; }
+
+  .status-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    font-size: 0.8rem;
+    cursor: default;
+  }
+  .pill.clickable { cursor: pointer; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .dot.ok { background: var(--ok); }
+  .dot.err { background: var(--err); }
+  .pill-detail {
+    display: none;
+    font-size: 0.78rem;
+    color: var(--muted);
+    padding: 6px 10px;
+    margin: -4px 0 8px;
+    border-left: 2px solid var(--err);
+    background: var(--card-bg);
+  }
+  .pill-detail.open { display: block; }
+
+  section { margin-bottom: 24px; }
+  h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+
+  .job-list { display: flex; flex-direction: column; gap: 8px; }
+  .job {
+    display: block;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  .job:hover { border-color: var(--accent); }
+  .job.new { background: var(--new-bg); }
+  .job-title { font-weight: 600; font-size: 0.95rem; }
+  .job-meta { color: var(--muted); font-size: 0.8rem; margin-top: 2px; }
+
+  .empty { color: var(--muted); font-size: 0.9rem; }
+
+  details { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+  summary { cursor: pointer; font-size: 0.95rem; }
+  details[open] summary { margin-bottom: 10px; }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <h1>Job Alerts</h1>
+  <div class="subtitle" id="last-run">Loading…</div>
+
+  <div class="status-strip" id="status-strip"></div>
+
+  <section>
+    <h2 id="new-today-heading">New today</h2>
+    <div class="job-list" id="new-today-list"></div>
+  </section>
+
+  <section>
+    <details id="all-matches">
+      <summary id="all-matches-heading">All open matches</summary>
+      <input type="text" id="filter-input" placeholder="Filter by title, location, or company…" />
+      <div class="job-list" id="all-matches-list"></div>
+    </details>
+  </section>
+
+  <script>
+    async function fetchJson(path) {
+      try {
+        const res = await fetch(path, { cache: "no-store" });
+        if (!res.ok) return null;
+        return await res.json();
+      } catch {
+        return null;
+      }
+    }
+
+    function jobRow(job, isNew) {
+      const a = document.createElement("a");
+      a.className = "job" + (isNew ? " new" : "");
+      a.href = job.url || "#";
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+
+      const title = document.createElement("div");
+      title.className = "job-title";
+      title.textContent = job.title || "(untitled)";
+
+      const meta = document.createElement("div");
+      meta.className = "job-meta";
+      meta.textContent = [job.company, job.location].filter(Boolean).join(" — ");
+
+      a.append(title, meta);
+      return a;
+    }
+
+    function renderEmpty(container, text) {
+      const p = document.createElement("div");
+      p.className = "empty";
+      p.textContent = text;
+      container.appendChild(p);
+    }
+
+    function formatTimestamp(iso) {
+      if (!iso) return "never";
+      try {
+        return new Date(iso).toLocaleString();
+      } catch {
+        return iso;
+      }
+    }
+
+    async function init() {
+      const [jobs, newToday, status] = await Promise.all([
+        fetchJson("./data/jobs.json"),
+        fetchJson("./data/new_today.json"),
+        fetchJson("./data/status.json"),
+      ]);
+
+      const lastRunEl = document.getElementById("last-run");
+      lastRunEl.textContent = status
+        ? `Last full run: ${formatTimestamp(status.generated_at)}`
+        : "No run data yet — check back after the first scheduled run.";
+
+      const strip = document.getElementById("status-strip");
+      if (status && status.companies) {
+        for (const [name, info] of Object.entries(status.companies)) {
+          const pill = document.createElement("div");
+          const ok = info.status === "success";
+          pill.className = "pill" + (ok ? "" : " clickable");
+
+          const dot = document.createElement("span");
+          dot.className = "dot " + (ok ? "ok" : "err");
+
+          const label = document.createElement("span");
+          label.textContent = name;
+
+          pill.append(dot, label);
+          strip.appendChild(pill);
+
+          if (!ok) {
+            const detail = document.createElement("div");
+            detail.className = "pill-detail";
+            detail.textContent = `${info.error || "unknown error"} (last successful run: ${formatTimestamp(info.last_success)})`;
+            strip.appendChild(detail);
+            pill.addEventListener("click", () => detail.classList.toggle("open"));
+          }
+        }
+      }
+
+      const newTodayHeading = document.getElementById("new-today-heading");
+      const newTodayList = document.getElementById("new-today-list");
+      if (newToday && newToday.length) {
+        newTodayHeading.textContent = `New today (${newToday.length})`;
+        newToday.forEach((job) => newTodayList.appendChild(jobRow(job, true)));
+      } else {
+        newTodayHeading.textContent = "New today";
+        renderEmpty(newTodayList, "No new postings today.");
+      }
+
+      const allMatches = jobs || [];
+      const allHeading = document.getElementById("all-matches-heading");
+      allHeading.textContent = `All open matches (${allMatches.length})`;
+
+      const allList = document.getElementById("all-matches-list");
+      const newIds = new Set((newToday || []).map((j) => j.id));
+
+      function renderAll(filterText) {
+        allList.innerHTML = "";
+        const needle = filterText.trim().toLowerCase();
+        const filtered = allMatches.filter((job) => {
+          if (!needle) return true;
+          return [job.title, job.location, job.company].join(" ").toLowerCase().includes(needle);
+        });
+        if (!filtered.length) {
+          renderEmpty(allList, "No matches.");
+          return;
+        }
+        filtered
+          .slice()
+          .sort((a, b) => (a.company || "").localeCompare(b.company || "") || (a.title || "").localeCompare(b.title || ""))
+          .forEach((job) => allList.appendChild(jobRow(job, newIds.has(job.id))));
+      }
+
+      renderAll("");
+      document.getElementById("filter-input").addEventListener("input", (e) => renderAll(e.target.value));
+    }
+
+    init();
+  </script>
+</body>
+</html>
