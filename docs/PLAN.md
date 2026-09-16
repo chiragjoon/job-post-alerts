@@ -183,6 +183,26 @@ Key choices:
 - **Each job row links directly to the posting** on the company's ATS —
   the page is a jumping-off point, not a destination.
 
+## 8. Adding companies (CLI)
+
+A small CLI, `python3 -m src.add_company "<name>" "<careers_url>"`, as a
+faster/safer alternative to hand-editing `config.yaml`:
+
+- Runs ATS detection + a live dry-run fetch against the URL immediately,
+  so a typo'd token or unsupported site is caught on the spot instead of
+  silently showing up as a failure in tomorrow's cron run.
+- Refuses to add a duplicate (same name or same URL already in the file).
+- Appends the entry into the `companies:` list via targeted text
+  insertion, not a full YAML rewrite — keeps the existing comments and
+  formatting in `config.yaml` intact (a round-trip YAML dump would drop
+  them).
+- Prints a summary on success: ATS detected, total jobs found, how many
+  match the current filters.
+
+Out of scope for this pass: removing/editing existing companies, editing
+filters, any web UI — this is purely "add one company, safely," matching
+the file-based, no-server architecture (§ Architecture).
+
 ## Build order
 
 1. Config loader + schema (with variant groups)
