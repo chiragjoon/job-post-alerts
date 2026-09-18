@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-17T10:49:35+00:00",
+  "generated_at": "2026-09-18T10:24:59+00:00",
   "companies": {
     "Figma": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 153,
+      "job_count": 152,
       "matched_count": 30,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     },
     "Notion": {
@@ -14,7 +14,7 @@
       "ats": "ashby",
       "job_count": 128,
       "matched_count": 29,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     },
     "Lever": {
@@ -22,31 +22,31 @@
       "ats": "lever",
       "job_count": 0,
       "matched_count": 0,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     },
     "NVIDIA": {
       "status": "success",
       "ats": "workday",
       "job_count": 2000,
-      "matched_count": 1217,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "matched_count": 1223,
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     },
     "Primark": {
       "status": "success",
       "ats": "smartrecruiters",
-      "job_count": 904,
+      "job_count": 908,
       "matched_count": 0,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     },
     "Lunar": {
       "status": "success",
       "ats": "teamtailor",
-      "job_count": 14,
+      "job_count": 15,
       "matched_count": 5,
-      "last_success": "2026-09-17T10:49:35+00:00",
+      "last_success": "2026-09-18T10:24:59+00:00",
       "error": null
     }
   }
