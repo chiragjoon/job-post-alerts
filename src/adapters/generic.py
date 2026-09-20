@@ -42,7 +42,12 @@ def fetch_jobs(company_name: str, careers_url: str) -> list[Job]:
     jobs: list[Job] = []
 
     for anchor in soup.find_all("a", href=True):
-        text = anchor.get_text(strip=True)
+        # separator=" " -- an anchor wrapping multiple child elements (title,
+        # department, location as separate nested tags) otherwise gets its
+        # text mashed together with no boundary, e.g. "EngineerCore
+        # PlatformRemote - USA" instead of "Engineer Core Platform Remote -
+        # USA". Collapse the resulting run of whitespace back to single spaces.
+        text = " ".join(anchor.get_text(separator=" ", strip=True).split())
         if not (MIN_TITLE_LEN <= len(text) <= MAX_TITLE_LEN):
             continue
         if text.lower() in SKIP_TEXT:
