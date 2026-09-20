@@ -122,8 +122,11 @@
   <div class="status-strip" id="status-strip"></div>
 
   <section>
-    <h2 id="new-today-heading">New today</h2>
-    <div class="job-list" id="new-today-list"></div>
+    <details id="new-today" open>
+      <summary id="new-today-heading">New today</summary>
+      <input type="text" id="new-today-filter" placeholder="Filter by title, location, or company…" />
+      <div class="job-list" id="new-today-list"></div>
+    </details>
   </section>
 
   <section>
@@ -218,42 +221,54 @@
         }
       }
 
-      const newTodayHeading = document.getElementById("new-today-heading");
-      const newTodayList = document.getElementById("new-today-list");
-      if (newToday && newToday.length) {
-        newTodayHeading.textContent = `New today (${newToday.length})`;
-        newToday.forEach((job) => newTodayList.appendChild(jobRow(job, true)));
-      } else {
-        newTodayHeading.textContent = "New today";
-        renderEmpty(newTodayList, "No new postings today.");
+      // Wires one section's heading/list/filter-input together: filtering
+      // by title, location, or company; re-rendered on every keystroke.
+      function setupFilterableSection({ items, headingEl, headingLabel, listEl, filterInputEl, emptyText, isNew }) {
+        headingEl.textContent = items.length ? `${headingLabel} (${items.length})` : headingLabel;
+
+        function render(filterText) {
+          listEl.innerHTML = "";
+          const needle = filterText.trim().toLowerCase();
+          const filtered = items.filter((job) => {
+            if (!needle) return true;
+            return [job.title, job.location, job.company].join(" ").toLowerCase().includes(needle);
+          });
+          if (!filtered.length) {
+            renderEmpty(listEl, needle ? "No matches." : emptyText);
+            return;
+          }
+          filtered
+            .slice()
+            .sort((a, b) => (a.company || "").localeCompare(b.company || "") || (a.title || "").localeCompare(b.title || ""))
+            .forEach((job) => listEl.appendChild(jobRow(job, isNew(job))));
+        }
+
+        filterInputEl.addEventListener("input", (e) => render(e.target.value));
+        render("");
       }
 
       const allMatches = jobs || [];
-      const allHeading = document.getElementById("all-matches-heading");
-      allHeading.textContent = `All open matches (${allMatches.length})`;
-
-      const allList = document.getElementById("all-matches-list");
       const newIds = new Set((newToday || []).map((j) => j.id));
 
-      function renderAll(filterText) {
-        allList.innerHTML = "";
-        const needle = filterText.trim().toLowerCase();
-        const filtered = allMatches.filter((job) => {
-          if (!needle) return true;
-          return [job.title, job.location, job.company].join(" ").toLowerCase().includes(needle);
-        });
-        if (!filtered.length) {
-          renderEmpty(allList, "No matches.");
-          return;
-        }
-        filtered
-          .slice()
-          .sort((a, b) => (a.company || "").localeCompare(b.company || "") || (a.title || "").localeCompare(b.title || ""))
-          .forEach((job) => allList.appendChild(jobRow(job, newIds.has(job.id))));
-      }
+      setupFilterableSection({
+        items: newToday || [],
+        headingEl: document.getElementById("new-today-heading"),
+        headingLabel: "New today",
+        listEl: document.getElementById("new-today-list"),
+        filterInputEl: document.getElementById("new-today-filter"),
+        emptyText: "No new postings today.",
+        isNew: () => true,
+      });
 
-      renderAll("");
-      document.getElementById("filter-input").addEventListener("input", (e) => renderAll(e.target.value));
+      setupFilterableSection({
+        items: allMatches,
+        headingEl: document.getElementById("all-matches-heading"),
+        headingLabel: "All open matches",
+        listEl: document.getElementById("all-matches-list"),
+        filterInputEl: document.getElementById("filter-input"),
+        emptyText: "No matches.",
+        isNew: (job) => newIds.has(job.id),
+      });
     }
 
     init();
