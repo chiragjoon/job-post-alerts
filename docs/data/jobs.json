@@ -472,6 +472,166 @@
     "company": "Notion"
   },
   {
+    "id": "JR2005651",
+    "title": "Senior Chip Design Verification Engineer",
+    "location": "Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Chip-Design-Verification-Engineer_JR2005651",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025034",
+    "title": "Senior AI Solutions Engineer",
+    "location": "Israel, Yokneam; Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-AI-Solutions-Engineer_JR2025034",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025271",
+    "title": "Senior AI Systems Engineer",
+    "location": "Israel, Yokneam; Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-AI-Systems-Engineer_JR2025271-1",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025102",
+    "title": "Head of Infrastructure Security Engineering - EDA Clusters",
+    "location": "US, CA, Remote; US, MA, Westford; US, TX, Austin; US, WA, Remote; US, NC, Durham",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Remote/Head-of-Infrastructure-Security-Engineering---EDA-Clusters_JR2025102",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025155",
+    "title": "Senior Software Engineer, Object Storage - DGX Cloud",
+    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, IL, Remote; US, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Object-Storage---DGX-Cloud_JR2025155",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2024421",
+    "title": "Principal Block and File Storage Software Engineer, Linux - DGX Cloud",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Block-File-Storage-Software-Engineer--Linux---DGX-Cloud_JR2024421",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2024331",
+    "title": "Senior System Software Engineer - Scientific Computing PaaS",
+    "location": "US, CA, Santa Clara; US, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---Scientific-Computing-PaaS_JR2024331",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2017966",
+    "title": "Principal Software Engineer - Rack Scale Systems Infrastructure",
+    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, Remote; US, MA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer---Rack-Scale-Systems-Infrastructure_JR2017966",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2018113",
+    "title": "Senior Network Reliability Engineer - DGX Cloud",
+    "location": "US, CA, Santa Clara; US, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Network-Reliability-Engineer---DGX-Cloud_JR2018113",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2019986",
+    "title": "Senior Manager, Engineering - Data Center Firmware",
+    "location": "US, CA, Santa Clara; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Engineering---Data-Center-Firmware_JR2019986",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2020348",
+    "title": "Senior Software Engineer - Manufacturing and Factory",
+    "location": "US, CA, Santa Clara; US, TX, Austin; US, Remote; US, NC, Durham; US, WA, Redmond",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---Manufacturing-and-Factory_JR2020348-1",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR1996987",
+    "title": "Senior Systems Software Engineer - GPU Performance at Scale",
+    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Performance-Engineer_JR1996987",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2001098",
+    "title": "Senior Software Engineer, Cloud-Native Stack \u2013 CSP Engagements",
+    "location": "US, CA, Santa Clara; US, TX, Austin; US, Remote; US, WA, Redmond; US, WA, Seattle",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Cloud-Native-Stack---CSP-Engagements_JR2001098",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2021549",
+    "title": "Senior Systems Software Engineer, Compute Stack Acceleration",
+    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer--Compute-Stack-Acceleration_JR2021549",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2020321",
+    "title": "Principal Software Engineer, E2E Performance and Goodput \u2014 CSP Engagements",
+    "location": "US, CA, Santa Clara; US, TX, Austin; US, OR, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--E2E-Performance-and-Goodput---CSP-Engagements_JR2020321",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2020319",
+    "title": "Principal Software Engineer, GPU Firmware and GPU System Software \u2014 CSP Engagements",
+    "location": "US, CA, Santa Clara; US, TX, Austin; US, OR, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--GPU-Firmware-and-GPU-System-Software---CSP-Engagements_JR2020319",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2020320",
+    "title": "Principal Software Engineer, At-Scale Reliability and Fleet Intelligence \u2014 CSP Engagements",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--At-Scale-Reliability-and-Fleet-Intelligence---CSP-Engagements_JR2020320",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2019870",
+    "title": "Senior Systems Software Engineer, Data Center Platform Enablement",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer--Data-Center-Platform-Enablement_JR2019870",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2008808",
+    "title": "Senior Data Center Performance Engineer - Benchmarking and Optimization",
+    "location": "US, CA, Santa Clara; US, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Data-Center-Performance-Engineer---Benchmarking-and-Optimization_JR2008808",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2014127",
+    "title": "Senior HPC and LSF Operations Engineer",
+    "location": "US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, NC, Durham",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-HPC-and-LSF-Operations-Engineer_JR2014127",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
     "id": "JR1980109",
     "title": "Software Engineering Manager - GPU Communications Libraries",
     "location": "US, CA, Santa Clara",
@@ -1392,14 +1552,6 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR2001098",
-    "title": "Senior Software Engineer, Cloud-Native Stack \u2013 CSP Engagements",
-    "location": "US, CA, Santa Clara; US, TX, Austin; US, Remote; US, WA, Redmond; US, WA, Seattle",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Cloud-Native-Stack---CSP-Engagements_JR2001098",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2024884",
     "title": "Firmware Application Engineer (RDSS Intern)",
     "location": "Taiwan, Taipei",
@@ -1412,30 +1564,6 @@
     "title": "Silicon Software Engineer - System and AI (RDSS Intern)",
     "location": "Taiwan, Taipei; Taiwan, Hsinchu",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Silicon-Software-Engineer---System-and-AI--RDSS-Intern-_JR2025538",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2024331",
-    "title": "Senior System Software Engineer - Scientific Computing PaaS",
-    "location": "US, CA, Santa Clara; US, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---Scientific-Computing-PaaS_JR2024331",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2017966",
-    "title": "Principal Software Engineer - Rack Scale Systems Infrastructure",
-    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, Remote; US, MA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer---Rack-Scale-Systems-Infrastructure_JR2017966",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2025155",
-    "title": "Senior Software Engineer, Object Storage - DGX Cloud",
-    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, IL, Remote; US, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Object-Storage---DGX-Cloud_JR2025155",
     "department": "",
     "company": "NVIDIA"
   },
@@ -1664,26 +1792,10 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR2018113",
-    "title": "Senior Network Reliability Engineer - DGX Cloud",
-    "location": "US, CA, Santa Clara; US, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Network-Reliability-Engineer---DGX-Cloud_JR2018113",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2025367",
     "title": "Manager, Mechanical Engineering",
     "location": "US, CA, Santa Clara",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Manager--Mechanical-Engineering_JR2025367",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2019986",
-    "title": "Senior Manager, Engineering - Data Center Firmware",
-    "location": "US, CA, Santa Clara; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Engineering---Data-Center-Firmware_JR2019986",
     "department": "",
     "company": "NVIDIA"
   },
@@ -1740,14 +1852,6 @@
     "title": "Head of Global Customer Engineering - Internal EDA Infrastructure",
     "location": "US, WA, Remote; US, MA, Westford; US, TX, Austin; US, Remote; US, NC, Durham; US, CA, Remote",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Remote/Head-of-Global-Customer-Engineering---Internal-EDA-Infrastructure_JR2025101",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2025102",
-    "title": "Head of Infrastructure Security Engineering - EDA Clusters",
-    "location": "US, CA, Remote; US, MA, Westford; US, TX, Austin; US, WA, Remote; US, NC, Durham",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Remote/Head-of-Infrastructure-Security-Engineering---EDA-Clusters_JR2025102",
     "department": "",
     "company": "NVIDIA"
   },
@@ -1868,14 +1972,6 @@
     "title": "Principal Engineer, CUDA UMD - GPU Kernel Scheduling",
     "location": "US, CA, Santa Clara",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Engineer--CUDA-UMD---Kernel-Scheduling_JR2014055",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2024421",
-    "title": "Principal Block and File Storage Software Engineer, Linux - DGX Cloud",
-    "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Block-File-Storage-Software-Engineer--Linux---DGX-Cloud_JR2024421",
     "department": "",
     "company": "NVIDIA"
   },
@@ -2112,14 +2208,6 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR1996987",
-    "title": "Senior Systems Software Engineer - GPU Performance at Scale",
-    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Performance-Engineer_JR1996987",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2013271",
     "title": "Senior Site Reliability Engineer - HPC",
     "location": "US, CA, Santa Clara; US, TX, Austin; US, NC, Durham",
@@ -2136,42 +2224,10 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR2019870",
-    "title": "Senior Systems Software Engineer, Data Center Platform Enablement",
-    "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer--Data-Center-Platform-Enablement_JR2019870",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2018037",
     "title": "Distinguished Engineer, Storage \u2013 AI Cloud",
     "location": "US, CA, Santa Clara",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Distinguished-Engineer--Storage---AI-Cloud_JR2018037",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2020348",
-    "title": "Senior Software Engineer - Manufacturing and Factory",
-    "location": "US, CA, Santa Clara; US, TX, Austin; US, Remote; US, NC, Durham; US, WA, Redmond",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer---Manufacturing-and-Factory_JR2020348-1",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2021549",
-    "title": "Senior Systems Software Engineer, Compute Stack Acceleration",
-    "location": "US, CA, Santa Clara; US, NC, Remote; US, TX, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Systems-Software-Engineer--Compute-Stack-Acceleration_JR2021549",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2020321",
-    "title": "Principal Software Engineer, E2E Performance and Goodput \u2014 CSP Engagements",
-    "location": "US, CA, Santa Clara; US, TX, Austin; US, OR, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--E2E-Performance-and-Goodput---CSP-Engagements_JR2020321",
     "department": "",
     "company": "NVIDIA"
   },
@@ -2584,14 +2640,6 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR2020320",
-    "title": "Principal Software Engineer, At-Scale Reliability and Fleet Intelligence \u2014 CSP Engagements",
-    "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--At-Scale-Reliability-and-Fleet-Intelligence---CSP-Engagements_JR2020320",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2014429",
     "title": "Senior Data Center Network Deployment Engineer",
     "location": "Israel, Yokneam",
@@ -2612,14 +2660,6 @@
     "title": "EDA Workflow Optimization Engineer",
     "location": "US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, NC, Durham",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/EDA-Workflow-Optimization-Engineer_JR2005386",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2014127",
-    "title": "Senior HPC and LSF Operations Engineer",
-    "location": "US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, NC, Durham",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-HPC-and-LSF-Operations-Engineer_JR2014127",
     "department": "",
     "company": "NVIDIA"
   },
@@ -3072,14 +3112,6 @@
     "company": "NVIDIA"
   },
   {
-    "id": "JR2014178",
-    "title": "HPC Operations Engineer",
-    "location": "US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, NC, Durham",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/HPC-Operations-Engineer_JR2014178",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
     "id": "JR2020891",
     "title": "Senior Software Engineer - DRIVE SW",
     "location": "India, Bengaluru; India, Hyderabad; India, Pune",
@@ -3108,14 +3140,6 @@
     "title": "Senior Network Infrastructure Engineer",
     "location": "India, Remote; India, Mumbai; India, Gurugram; India, Hyderabad; India, Pune",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Remote/Senior-Network-Infrastructure-Engineer_JR2015526",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2020319",
-    "title": "Principal Software Engineer, GPU Firmware and GPU System Software \u2014 CSP Engagements",
-    "location": "US, CA, Santa Clara; US, TX, Austin; US, OR, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Software-Engineer--GPU-Firmware-and-GPU-System-Software---CSP-Engagements_JR2020319",
     "department": "",
     "company": "NVIDIA"
   },
@@ -4820,14 +4844,6 @@
     "title": "Senior Systems Software Engineer, Developer Productivity and Cloud Automation - GeForce NOW",
     "location": "India, Pune",
     "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Pune/Senior-Systems-Software-Engineer--Developer-Productivity-and-Cloud-Automation---GeForce-NOW_JR2021957",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2008808",
-    "title": "Senior Data Center Performance Engineer - Benchmarking and Optimization",
-    "location": "US, CA, Santa Clara; US, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Data-Center-Performance-Engineer---Benchmarking-and-Optimization_JR2008808",
     "department": "",
     "company": "NVIDIA"
   },
