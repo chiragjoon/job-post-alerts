@@ -6,6 +6,11 @@ live, but a nonzero-result account wasn't found during development to
 lock down every inner field name. If a field turns out wrong, this fails
 loudly per-company (see main.py) rather than silently -- fix the field
 name here once you see the real error.
+
+Pagination is cursor-based via a `nextPage` token in the response, passed
+back as {"token": ...} on the next request -- the old {"limit", "offset"}
+params this adapter originally sent are now rejected outright with a 400
+({"limit": "Not allowed", "offset": "Not allowed"}), confirmed live.
 """
 
 from __future__ import annotations
@@ -15,7 +20,6 @@ import requests
 from .base import REQUEST_TIMEOUT, USER_AGENT, Job, first_path_segment
 
 API_URL = "https://apply.workable.com/api/v3/accounts/{slug}/jobs"
-PAGE_SIZE = 50
 
 
 def fetch_jobs(company_name: str, careers_url: str) -> list[Job]:
@@ -24,11 +28,11 @@ def fetch_jobs(company_name: str, careers_url: str) -> list[Job]:
         raise ValueError(f"could not extract a Workable account slug from {careers_url!r}")
 
     jobs: list[Job] = []
-    offset = 0
+    body: dict = {}
     while True:
         resp = requests.post(
             API_URL.format(slug=slug),
-            json={"limit": PAGE_SIZE, "offset": offset},
+            json=body,
             timeout=REQUEST_TIMEOUT,
             headers={"User-Agent": USER_AGENT, "Content-Type": "application/json"},
         )
@@ -59,9 +63,9 @@ def fetch_jobs(company_name: str, careers_url: str) -> list[Job]:
                 )
             )
 
-        offset += PAGE_SIZE
-        total = data.get("total", 0)
-        if offset >= total or not results:
+        next_page = data.get("nextPage")
+        if not next_page or not results:
             break
+        body = {"token": next_page}
 
     return jobs
