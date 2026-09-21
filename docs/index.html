@@ -103,7 +103,7 @@
   summary { cursor: pointer; font-size: 0.95rem; }
   details[open] summary { margin-bottom: 10px; }
 
-  input[type="text"] {
+  input[type="text"], select {
     width: 100%;
     padding: 8px 10px;
     margin-bottom: 10px;
@@ -113,6 +113,14 @@
     color: var(--fg);
     font-size: 0.9rem;
   }
+
+  .filters-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .filters-row input[type="text"], .filters-row select { margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -124,7 +132,19 @@
   <section>
     <details id="new-today" open>
       <summary id="new-today-heading">New today</summary>
-      <input type="text" id="new-today-filter" placeholder="Filter by title, location, or company…" />
+      <div class="filters-row">
+        <input type="text" id="new-today-role-filter" placeholder="Filter by title or company…" />
+        <input type="text" id="new-today-location-filter" placeholder="Filter by location…" />
+        <select id="new-today-seniority-filter">
+          <option value="">All seniority levels</option>
+          <option value="graduate">Graduate / New grad</option>
+          <option value="intern">Internship</option>
+          <option value="junior">Junior / Entry-level</option>
+          <option value="senior">Senior</option>
+          <option value="lead">Lead / Principal / Director</option>
+          <option value="unspecified">Unspecified</option>
+        </select>
+      </div>
       <div class="job-list" id="new-today-list"></div>
     </details>
   </section>
@@ -172,6 +192,20 @@
       p.className = "empty";
       p.textContent = text;
       container.appendChild(p);
+    }
+
+    // Best-effort seniority bucket derived from the job title — there's no
+    // seniority field in the scraped data, just free-text titles, so this is
+    // keyword matching, not a guarantee. Checked most-specific-first: a title
+    // like "Graduate Software Engineer Intern" should land as "intern".
+    function classifySeniority(title) {
+      const t = (title || "").toLowerCase();
+      if (/\bintern(s|ship)?\b/.test(t)) return "intern";
+      if (/\bnew\s*grad(uate)?\b/.test(t) || /\bgraduate\b/.test(t) || /\bgrad\s*(scheme|program(me)?|rotation)\b/.test(t)) return "graduate";
+      if (/\bjunior\b/.test(t) || /\bentry[- ]level\b/.test(t)) return "junior";
+      if (/\b(lead|staff|principal|director|head of|vp|vice president)\b/.test(t)) return "lead";
+      if (/\bsenior\b/.test(t) || /\bsr\.?\b/.test(t)) return "senior";
+      return "unspecified";
     }
 
     function formatTimestamp(iso) {
@@ -247,17 +281,53 @@
         render("");
       }
 
+      // "New today" gets its own setup: role, location, and seniority
+      // filters all apply at once (AND), rather than one combined substring
+      // search — seniority is derived client-side via classifySeniority()
+      // since the underlying data has no such field.
+      function setupNewTodaySection({ items, headingEl, listEl, roleInputEl, locationInputEl, seniorityInputEl, emptyText }) {
+        headingEl.textContent = items.length ? `New today (${items.length})` : "New today";
+
+        function render() {
+          listEl.innerHTML = "";
+          const roleNeedle = roleInputEl.value.trim().toLowerCase();
+          const locationNeedle = locationInputEl.value.trim().toLowerCase();
+          const seniority = seniorityInputEl.value;
+
+          const filtered = items.filter((job) => {
+            if (roleNeedle && !`${job.title || ""} ${job.company || ""}`.toLowerCase().includes(roleNeedle)) return false;
+            if (locationNeedle && !(job.location || "").toLowerCase().includes(locationNeedle)) return false;
+            if (seniority && classifySeniority(job.title) !== seniority) return false;
+            return true;
+          });
+
+          if (!filtered.length) {
+            renderEmpty(listEl, (roleNeedle || locationNeedle || seniority) ? "No matches." : emptyText);
+            return;
+          }
+          filtered
+            .slice()
+            .sort((a, b) => (a.company || "").localeCompare(b.company || "") || (a.title || "").localeCompare(b.title || ""))
+            .forEach((job) => listEl.appendChild(jobRow(job, true)));
+        }
+
+        roleInputEl.addEventListener("input", render);
+        locationInputEl.addEventListener("input", render);
+        seniorityInputEl.addEventListener("change", render);
+        render();
+      }
+
       const allMatches = jobs || [];
       const newIds = new Set((newToday || []).map((j) => j.id));
 
-      setupFilterableSection({
+      setupNewTodaySection({
         items: newToday || [],
         headingEl: document.getElementById("new-today-heading"),
-        headingLabel: "New today",
         listEl: document.getElementById("new-today-list"),
-        filterInputEl: document.getElementById("new-today-filter"),
+        roleInputEl: document.getElementById("new-today-role-filter"),
+        locationInputEl: document.getElementById("new-today-location-filter"),
+        seniorityInputEl: document.getElementById("new-today-seniority-filter"),
         emptyText: "No new postings today.",
-        isNew: () => true,
       });
 
       setupFilterableSection({
