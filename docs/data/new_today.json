@@ -1,498 +1,754 @@
 [
   {
-    "id": "JR2021820",
-    "title": "HPC Performance Engineer",
-    "location": "UK, Remote; Switzerland, Remote; Germany, Remote; France, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/UK-Remote/HPC-Performance-Engineer_JR2021820",
+    "id": "6201407004",
+    "title": "Data Platform Engineer",
+    "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+    "url": "https://boards.greenhouse.io/figma/jobs/6201407004?gh_jid=6201407004",
+    "department": "Engineering",
+    "company": "Figma"
+  },
+  {
+    "id": "e9bf7ffa-9cf2-4360-a2e4-e9fa66859927",
+    "title": "Software Engineer, Data Platform (Foundations Lead)",
+    "location": "San Francisco, California",
+    "url": "https://jobs.ashbyhq.com/notion/e9bf7ffa-9cf2-4360-a2e4-e9fa66859927",
+    "department": "Engineering",
+    "company": "Notion"
+  },
+  {
+    "id": "JR2025072",
+    "title": "Senior Software Engineer, Network System Validation",
+    "location": "Switzerland, Remote; Switzerland, Zurich",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Remote/Senior-Software-Engineer--Network-System-Validation_JR2025072",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2024785",
-    "title": "Senior Machine Learning Engineer, Perception - Autonomous Driving",
-    "location": "US, CA, Santa Clara; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Perception---Autonomous-Driving_JR2024785",
+    "id": "JR2020983",
+    "title": "Board Design Engineer, Sustain",
+    "location": "Israel, Yokneam",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Board-Design-Engineer--Sustain_JR2020983",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2025121",
-    "title": "Senior Software Control Integration Engineer - Autonomous Vehicles",
+    "id": "JR2021704",
+    "title": "Senior DevOps Engineer, AI Agent Platforms",
+    "location": "Israel, Yokneam; Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-DevOps-Engineer--AI-Agent-Platforms_JR2021704",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2021522",
+    "title": "Senior Software Engineer, AI Agent Platforms",
+    "location": "Israel, Yokneam; Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Software-Engineer--AI-Agent-Platforms_JR2021522",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2024576",
+    "title": "Senior Manager, Software Engineering - Employee Productivity",
+    "location": "India, Pune",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Pune/Senior-Manager--Software-Engineering---Employee-Productivity_JR2024576",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2026309",
+    "title": "Senior System Software Engineer - GPU MODS",
+    "location": "India, Pune",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Pune/Senior-System-Software-Engineer---GPU-MODS_JR2026309",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025914",
+    "title": "System Software Engineer - USB (RDSS Intern)",
+    "location": "Taiwan, Taipei",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/System-Software-Engineer---USB--RDSS-Intern-_JR2025914-1",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2024872",
+    "title": "Senior Full Stack Software Engineer, Data Platform",
     "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Control-Integration-Engineer---Autonomous-Vehicles_JR2025121",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Full-Stack-Software-Engineer--Data-Platform_JR2024872",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2025892",
-    "title": "Senior Software Engineer, Test - Autonomous Vehicles",
-    "location": "US, CA, Santa Clara; US, WA, Remote; US, NJ, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Test---Autonomous-Vehicles_JR2025892",
+    "id": "JR2026256",
+    "title": "Senior System Software Engineer - GPU Power Management",
+    "location": "US, CA, Santa Clara; US, TX, Austin; US, CA, Remote; US, WA, Redmond",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---GPU-Power-Management_JR2026256",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2023850",
-    "title": "Senior Synthetic Data Engineer - Autonomous Driving",
-    "location": "US, CA, Santa Clara; US, TX, Remote; US, NY, Remote; US, WA, Remote; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Synthetic-Data-Engineer---Autonomous-Driving_JR2023850-1",
+    "id": "JR2025619",
+    "title": "Data and Platform Engineer",
+    "location": "US, CA, Remote; US, TX, Remote; US, NY, Remote; US, WA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Remote/Data-and-Platform-Engineer_JR2025619",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2026182",
-    "title": "Senior Software Engineer, AV Planner - Autonomous Vehicles",
-    "location": "China, Shanghai",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-Software-Engineer--AV-Planner---Autonomous-Vehicles_JR2026182",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR1998048",
-    "title": "Senior DGX Cloud AI Infrastructure Software Engineer",
-    "location": "China, Shanghai",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-DGX-Cloud-AI-Infrastructure-Software-Engineer_JR1998048",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2015795",
-    "title": "ASIC Verification Engineer - Clocks",
-    "location": "India, Bengaluru",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/ASIC-Verification-Engineer---Clocks_JR2015795",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2015296",
-    "title": "Senior Software Engineer, AI Frameworks",
-    "location": "US, CA, Santa Clara; US, CA, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--AI-Frameworks_JR2015296",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2025783",
-    "title": "Software Engineer, Simulation and Virtualization (RDSS Intern)",
-    "location": "Taiwan, Taipei; Taiwan, Hsinchu",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Software-Engineer--Simulation-and-Virtualization--RDSS-Intern-_JR2025783",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2026249",
-    "title": "System Software Engineer - CUDA Chips",
+    "id": "JR2024551",
+    "title": "Data Application Engineer, Enterprise Data Management",
     "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Software-Engineer---CUDA-Chips_JR2026249-1",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Data-Application-Engineer--Enterprise-Data-Management_JR2024551",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2025971",
-    "title": "Senior Solution Engineer, Compute Systems",
-    "location": "US, CA, Santa Clara; US, MA, Westford; US, TX, Austin; US, NC, Durham; US, WA, Redmond; US, NY, New York",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Solution-Engineer--Compute-Systems_JR2025971",
-    "department": "",
-    "company": "NVIDIA"
-  },
-  {
-    "id": "JR2025388",
-    "title": "Senior Software Engineer, Capacity Management - DGX Cloud",
+    "id": "JR2025923",
+    "title": "Senior System Software Engineer \u2013 Linux-Tegra Power Management and Performance Optimization",
     "location": "US, CA, Santa Clara",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Capacity-Management---DGX-Cloud_JR2025388",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---Linux-Tegra-Power-Management-and-Performance-Optimization_JR2025923",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2026042",
-    "title": "Senior Storage Software Engineer - DGX Cloud",
-    "location": "US, CA, Santa Clara; US, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Storage-Software-Engineer---DGX-Cloud_JR2026042",
+    "id": "JR2026218",
+    "title": "Compiler Engineer, Agentic Compilation Systems - New College Grad 2027",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Compiler-Engineer--Agentic-Compilation-Systems---New-College-Grad-2027_JR2026218",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2026094",
-    "title": "Senior System Engineer, Solution Engineering",
-    "location": "Poland, Remote; Switzerland, Remote; Germany, Remote; Netherlands, Remote; Ukraine, Remote",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Remote/Senior-System-Engineer--Solution-Engineering_JR2026094",
+    "id": "JR2026097",
+    "title": "Senior Applications Software Engineer, Perception and Sensor Fusion",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Applications-Software-Engineer--Perception-and-Sensor-Fusion_JR2026097",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "JR2025828",
-    "title": "Senior Compute System Software Engineer",
-    "location": "India, Bengaluru",
-    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Compute-System-Software-Engineer_JR2025828",
+    "id": "JR2001780",
+    "title": "Principal System Software Engineer - CUDA Driver",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer---CUDA-Driver_JR2001780",
     "department": "",
     "company": "NVIDIA"
   },
   {
-    "id": "a8198563-49c8-48de-8165-8f0c5fcc0ab9",
-    "title": "(Senior) Analytics Engineer",
-    "location": "K\u00f8benhavn, DK",
-    "url": "https://lunar.teamtailor.com/jobs/8427536-senior-analytics-engineer",
+    "id": "JR2014097",
+    "title": "Senior Software Engineer, Attestation Services - DGX Cloud",
+    "location": "US, CA, Santa Clara; US, TX, Remote; US, WA, Remote; US, Remote; US, CA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Attestation-Services---DGX-Cloud_JR2014097",
     "department": "",
-    "company": "Lunar"
+    "company": "NVIDIA"
   },
   {
-    "id": "8209970",
-    "title": "Software Engineer, Stripe Data Pipeline",
-    "location": "Bangalore",
-    "url": "https://stripe.com/jobs/search?gh_jid=8209970",
-    "department": "8122 Data Foundations",
+    "id": "JR2002154",
+    "title": "Senior Mechanical Engineer",
+    "location": "Israel, Yokneam",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Mechanical-Engineer_JR2002154",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2026131",
+    "title": "Distinguished Engineer, Security Architecture  - DGX Cloud",
+    "location": "US, WA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Remote/Distinguished-Engineer--Security-Architecture----DGX-Cloud_JR2026131",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2026132",
+    "title": "Principal Engineer, Security Architecture - DGX Cloud",
+    "location": "US, WA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Remote/Principal-Engineer--Security-Architecture---DGX-Cloud_JR2026132",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2025612",
+    "title": "Senior Data and Platform Engineer",
+    "location": "US, CA, Remote; US, TX, Remote; US, NY, Remote; US, WA, Remote",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Data-and-Platform-Engineer_JR2025612",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2005335",
+    "title": "Senior Memory System Engineer",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Memory-System-Engineer_JR2005335",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2018983",
+    "title": "Senior Customer Safety Engineer - Automotive",
+    "location": "US, CA, Santa Clara",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Customer-Safety-Engineer---Automotive_JR2018983",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "JR2026080",
+    "title": "Senior C++ Software Engineer \u2013 AI Developer Tools",
+    "location": "Israel, Tel Aviv",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-C---Software-Engineer---AI-Developer-Tools_JR2026080",
+    "department": "",
+    "company": "NVIDIA"
+  },
+  {
+    "id": "8197886",
+    "title": "Machine Learning Engineer, Link",
+    "location": "New York City ",
+    "url": "https://stripe.com/jobs/search?gh_jid=8197886",
+    "department": "8570 Consumer Network - Eng",
     "company": "Stripe"
   },
   {
-    "id": "7573921",
-    "title": "Senior Software Engineer (Java) - Financial Products",
-    "location": "Amsterdam",
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/7573921",
-    "department": "Development",
-    "company": "Adyen"
+    "id": "7618977",
+    "title": "Software Engineer, Core Technology",
+    "location": "Bangalore",
+    "url": "https://stripe.com/jobs/search?gh_jid=7618977",
+    "department": "8127 Core Infrastructure",
+    "company": "Stripe"
   },
   {
-    "id": "8111699",
-    "title": "Software Engineer (Java) - Authentication & Tokenization",
+    "id": "8185014",
+    "title": "Staff Engineer, Payments",
     "location": "Bengaluru",
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/8111699",
+    "url": "https://stripe.com/jobs/search?gh_jid=8185014",
+    "department": "8516 Payments Global",
+    "company": "Stripe"
+  },
+  {
+    "id": "8153114",
+    "title": "Software Engineer I (Front End) - Lifecycle Experience",
+    "location": "Chicago",
+    "url": "https://job-boards.greenhouse.io/adyen/jobs/8153114",
     "department": "Development",
     "company": "Adyen"
   },
   {
-    "id": "8069237",
-    "title": "Team Lead - Software Engineer",
-    "location": "Singapore",
-    "url": "https://job-boards.greenhouse.io/adyen/jobs/8069237",
-    "department": "Development",
-    "company": "Adyen"
-  },
-  {
-    "id": "5893908b-16f9-4edf-b9ee-be93f9ce1580",
-    "title": "Staff Software Engineer - Streaming",
+    "id": "6adc898c-9b6d-4b0a-833b-9c9b77006c05",
+    "title": "Senior Mobile Engineer",
     "location": "London",
-    "url": "https://jobs.ashbyhq.com/checkout.com/5893908b-16f9-4edf-b9ee-be93f9ce1580",
+    "url": "https://jobs.ashbyhq.com/checkout.com/6adc898c-9b6d-4b0a-833b-9c9b77006c05",
     "department": "All Departments",
     "company": "Checkout.com"
   },
   {
-    "id": "7601580002",
-    "title": "Senior Software Engineer - Data Platform",
-    "location": "Bengaluru, India",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7601580002",
-    "department": "Engineering - Pipeline",
+    "id": "e6347348c0bf78f005ad88000e608698",
+    "title": "Senior Security Engineer - Identity and Access Management CyberSecurity Remote - Canada",
+    "location": "",
+    "url": "https://www.marqeta.com/careers/7df97888-4e83-4359-82f5-d1ccf94e07a3",
+    "department": "(unconfirmed)",
+    "company": "Marqeta"
+  },
+  {
+    "id": "9edc9cc4-d14f-48da-ba19-188b3719d716",
+    "title": "Senior Back End Engineer I",
+    "location": "Portugal, Lisbon",
+    "url": "https://jobs.ashbyhq.com/thought-machine/9edc9cc4-d14f-48da-ba19-188b3719d716",
+    "department": "Engineering",
+    "company": "Thought Machine"
+  },
+  {
+    "id": "4de1b10f-c34c-4d2c-99d1-abcf17541530",
+    "title": "Solution Engineer",
+    "location": "Dallas, TX",
+    "url": "https://jobs.ashbyhq.com/snowflake/4de1b10f-c34c-4d2c-99d1-abcf17541530",
+    "department": "Solution Engineering",
+    "company": "Snowflake"
+  },
+  {
+    "id": "eb4ef48f-7322-481c-984a-a81b2e8460e1",
+    "title": "Account Engineer",
+    "location": "US-CA-Menlo Park",
+    "url": "https://jobs.ashbyhq.com/snowflake/eb4ef48f-7322-481c-984a-a81b2e8460e1",
+    "department": "Solution Engineering",
+    "company": "Snowflake"
+  },
+  {
+    "id": "ecd08904-f188-4336-bf8c-f75f97df1a02",
+    "title": "Data Engineering Solutions Specialist ",
+    "location": "US, Remote",
+    "url": "https://jobs.ashbyhq.com/snowflake/ecd08904-f188-4336-bf8c-f75f97df1a02",
+    "department": "Revenue Operations",
+    "company": "Snowflake"
+  },
+  {
+    "id": "8538884002",
+    "title": "Lead Field Technical Program Manager, Forward Deployed Engineering - Retail, Consumer Goods, Travel, Transportation, & Hospitality",
+    "location": "United States",
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8538884002",
+    "department": "Professional Services Operations",
     "company": "Databricks"
   },
   {
-    "id": "7619811002",
-    "title": "Senior Software Engineer - Observability",
-    "location": "Bengaluru, India",
-    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7619811002",
-    "department": "Engineering - Pipeline",
+    "id": "8716314002",
+    "title": "Sr. Manager, Field Engineering - Sports",
+    "location": "Northeast - United States",
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8716314002",
+    "department": "Field Engineering - FE Direct Enterprise",
     "company": "Databricks"
   },
   {
-    "id": "8098863",
-    "title": "Director, Engineering",
-    "location": "Tel Aviv, Israel",
-    "url": "https://careers.datadoghq.com/detail/8098863/?gh_jid=8098863",
-    "department": "Dev Eng",
-    "company": "Datadog"
+    "id": "8828096002",
+    "title": "Sr. Solutions Engineer - Games",
+    "location": "California",
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8828096002",
+    "department": "Field Engineering - FE Direct Emerging",
+    "company": "Databricks"
   },
   {
-    "id": "8220151",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Romania",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220151&gh_jid=8220151",
-    "department": "Platform - Elasticsearch",
+    "id": "8828100002",
+    "title": "Sr. Solutions Engineer - Games",
+    "location": "Southwest - United States",
+    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8828100002",
+    "department": "Field Engineering - FE Direct Emerging",
+    "company": "Databricks"
+  },
+  {
+    "id": "8077634",
+    "title": "Fullstack Software Engineer II - Admin UX - Platform Applications",
+    "location": "United States",
+    "url": "https://jobs.elastic.co/jobs?gh_jid=8077634&gh_jid=8077634",
+    "department": "Platform - Application Experience",
     "company": "Elastic"
   },
   {
-    "id": "8220098",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Ireland",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220098&gh_jid=8220098",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
+    "id": "7870876",
+    "title": "Senior Software Engineer, Query Optimization",
+    "location": "United States",
+    "url": "https://www.mongodb.com/careers/job/?gh_jid=7870876",
+    "department": "Query",
+    "company": "MongoDB"
   },
   {
-    "id": "8220111",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Spain",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220111&gh_jid=8220111",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
+    "id": "8173735",
+    "title": "Staff Software Engineer, Agentic AI ",
+    "location": "New York City",
+    "url": "https://www.mongodb.com/careers/job/?gh_jid=8173735",
+    "department": "Magenta",
+    "company": "MongoDB"
   },
   {
-    "id": "8220112",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Switzerland",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220112&gh_jid=8220112",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
-  },
-  {
-    "id": "8220113",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Poland",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220113&gh_jid=8220113",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
-  },
-  {
-    "id": "8220115",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Norway",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220115&gh_jid=8220115",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
-  },
-  {
-    "id": "8220127",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Greece",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220127&gh_jid=8220127",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
-  },
-  {
-    "id": "8220142",
-    "title": "Principal Software Engineer - Search Infra - Elasticsearch",
-    "location": "Portugal",
-    "url": "https://jobs.elastic.co/jobs?gh_jid=8220142&gh_jid=8220142",
-    "department": "Platform - Elasticsearch",
-    "company": "Elastic"
-  },
-  {
-    "id": "6147032004",
-    "title": "Senior Business Value Engineer | UK | Remote ",
-    "location": "United Kingdom (Remote)",
-    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6147032004",
-    "department": "Solutions Engineering (EMEA)",
+    "id": "6202561004",
+    "title": "Engineering Manager - Observability | Germany | Remote",
+    "location": "Germany (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202561004",
+    "department": "R&D: Observability ",
     "company": "Grafana Labs"
   },
   {
-    "id": "R29818",
-    "title": "Corporate Sales Engineer - GCC (Remote, UAE)",
-    "location": "UAE - Remote",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/UAE---Remote/Corporate-Sales-Engineer---GCC--Remote--UAE-_R29818-1",
+    "id": "6202563004",
+    "title": "Engineering Manager - Observability | Ireland | Remote",
+    "location": "Republic of Ireland (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202563004",
+    "department": "R&D: Observability ",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202560004",
+    "title": "Engineering Manager - Observability | Spain | Remote",
+    "location": "Spain (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202560004",
+    "department": "R&D: Observability ",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202558004",
+    "title": "Engineering Manager - Observability | Sweden | Remote",
+    "location": "Sweden (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202558004",
+    "department": "R&D: Observability ",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202562004",
+    "title": "Engineering Manager - Observability | UK | Remote",
+    "location": "United Kingdom (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202562004",
+    "department": "R&D: Observability ",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202750004",
+    "title": "Senior Backend Engineer - Databases - Analytics | Germany | Remote",
+    "location": "Germany (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202750004",
+    "department": "R&D: Second Horizon",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202749004",
+    "title": "Senior Backend Engineer - Databases - Analytics | Ireland | Remote",
+    "location": "Republic of Ireland (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202749004",
+    "department": "R&D: Second Horizon",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202746004",
+    "title": "Senior Backend Engineer - Databases - Analytics | Spain | Remote",
+    "location": "Spain (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202746004",
+    "department": "R&D: Second Horizon",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202748004",
+    "title": "Senior Backend Engineer - Databases - Analytics | Sweden | Remote",
+    "location": "Sweden (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202748004",
+    "department": "R&D: Second Horizon",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "6202751004",
+    "title": "Senior Backend Engineer - Databases - Analytics | UK | Remote",
+    "location": "United Kingdom (Remote)",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6202751004",
+    "department": "R&D: Second Horizon",
+    "company": "Grafana Labs"
+  },
+  {
+    "id": "8000571003",
+    "title": "Senior Site Reliability Engineer",
+    "location": "Novi Sad, South Ba\u010dka, Serbia, EMEA",
+    "url": "https://www.fivetran.com/careers/job?gh_jid=8000571003",
+    "department": "Engineering Department",
+    "company": "Fivetran"
+  },
+  {
+    "id": "7798462003",
+    "title": "Software Development Engineer in Test II",
+    "location": "Bengaluru, Karnataka, India, APAC",
+    "url": "https://www.fivetran.com/careers/job?gh_jid=7798462003",
+    "department": "Engineering Department",
+    "company": "Fivetran"
+  },
+  {
+    "id": "8206674",
+    "title": "Senior Forward Deployed Engineer",
+    "location": "Hybrid",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8206674?gh_jid=8206674",
+    "department": "Developer Relations",
+    "company": "Cloudflare"
+  },
+  {
+    "id": "8204256",
+    "title": "Senior Software Engineer, Zero Trust Client",
+    "location": "Hybrid",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8204256?gh_jid=8204256",
+    "department": "Engineering",
+    "company": "Cloudflare"
+  },
+  {
+    "id": "8157281",
+    "title": "Staff Software Engineer - Integrated Network Strategy",
+    "location": "Hybrid",
+    "url": "https://boards.greenhouse.io/cloudflare/jobs/8157281?gh_jid=8157281",
+    "department": "Engineering",
+    "company": "Cloudflare"
+  },
+  {
+    "id": "8074762",
+    "title": "Staff, Business Intelligence Engineer",
+    "location": "Remote - US",
+    "url": "https://job-boards.greenhouse.io/twilio/jobs/8074762",
+    "department": "Business Intelligence",
+    "company": "Twilio"
+  },
+  {
+    "id": "8204407",
+    "title": "Technical Support Engineer",
+    "location": "Remote - Ireland",
+    "url": "https://job-boards.greenhouse.io/twilio/jobs/8204407",
+    "department": "Customer Support",
+    "company": "Twilio"
+  },
+  {
+    "id": "R30116",
+    "title": "Regional Sales Engineer, Poland (Remote)",
+    "location": "Poland - Remote",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Poland---Remote/Regional-Sales-Engineer--Poland--Remote-_R30116",
     "department": "",
     "company": "CrowdStrike"
   },
   {
-    "id": "R29922",
-    "title": "Corporate Sales Engineer",
-    "location": "United Kingdom - Reading",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/United-Kingdom---Reading/Corporate-Sales-Engineer_R29922",
+    "id": "R27156",
+    "title": "Director of Engineering - Cloud & AI Runtime (Hybrid)",
+    "location": "USA - Sunnyvale, CA",
+    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/USA---Sunnyvale-CA/Sr-Software-Engineer---Sensor---Cloud-Runtime-Protection--Hybrid-_R27156",
     "department": "",
     "company": "CrowdStrike"
   },
   {
-    "id": "R29935",
-    "title": "Corporate Sales Engineer (Hybrid, GBR)",
-    "location": "United Kingdom - Reading",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/United-Kingdom---Reading/Corporate-Sales-Engineer--Hybrid--GBR-_R29935",
-    "department": "",
-    "company": "CrowdStrike"
-  },
-  {
-    "id": "R29982",
-    "title": "Corporate Sales Engineer, French Speaking",
-    "location": "Spain - Barcelona",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Spain---Barcelona/Corporate-Sales-Engineer--French-Speaking_R29982",
-    "department": "",
-    "company": "CrowdStrike"
-  },
-  {
-    "id": "R29210",
-    "title": "Network Reliability Engineer III (Hybrid, IND)",
-    "location": "India - Bangalore",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/India---Bangalore/Network-Reliability-Engineer-III--Hybrid--IND-_R29210",
-    "department": "",
-    "company": "CrowdStrike"
-  },
-  {
-    "id": "R30143",
-    "title": "Sr. Mac Sensor Engineer (Hybrid)",
-    "location": "USA - Sunnyvale, CA; USA - New York, NY; USA - Austin, TX; USA - Redmond, WA",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/USA---Sunnyvale-CA/Sr-Mac-Sensor-Engineer--Hybrid-_R30143",
-    "department": "",
-    "company": "CrowdStrike"
-  },
-  {
-    "id": "R29954",
-    "title": "Sales Engineer, Cloud Security, French Speaking (Remote, FRA)",
-    "location": "France - Remote; Spain - Remote; United Kingdom - Remote",
-    "url": "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/France---Remote/Sales-Engineer--Cloud-Security--French-Speaking--Remote--FRA-_R29954",
-    "department": "",
-    "company": "CrowdStrike"
-  },
-  {
-    "id": "JR-018182",
-    "title": "Senior Software Engineer, Team SIA",
-    "location": "Office -Bulgaria - CyberArk Sofia",
-    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office--Bulgaria---CyberArk-Sofia/Senior-Software-Engineer-with-Python--Team-SIA_JR-018182",
-    "department": "",
-    "company": "Palo Alto Networks"
-  },
-  {
-    "id": "JR-020377",
-    "title": "Senior Staff Software Engineer",
-    "location": "Office - India - CyberArk Hyderabad",
-    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office---India---CyberArk-Hyderabad/Senior-Staff-Software-Engineer_JR-020377",
-    "department": "",
-    "company": "Palo Alto Networks"
-  },
-  {
-    "id": "JR-022758",
-    "title": "Staff DevOps Engineer (Cortex)",
+    "id": "JR-019162",
+    "title": "Senior Staff Cloud Security Engineer",
     "location": "Office - India - Bangalore Bagmane Tech Park",
-    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office---India---Bangalore-Bagmane-Tech-Park/Staff-DevOps-Engineer--Cortex-_JR-022758",
+    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office---India---Bangalore-Bagmane-Tech-Park/Senior-Staff-Cloud-Security-Engineer_JR-019162",
     "department": "",
     "company": "Palo Alto Networks"
   },
   {
-    "id": "8212853",
-    "title": "Staff Backend Engineer\u00a0",
-    "location": "Bengaluru, India",
-    "url": "https://www.okta.com/company/careers/opportunity/8212853?gh_jid=8212853",
+    "id": "JR-022783",
+    "title": "Principal AI Automation / Test Engineer (Cloud NGFW)",
+    "location": "Office - USA - CA - Headquarters",
+    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office---USA---CA---Headquarters/Principal-AI-Automation---Test-Engineer--Cloud-NGFW-_JR-022783-1",
+    "department": "",
+    "company": "Palo Alto Networks"
+  },
+  {
+    "id": "JR-020961",
+    "title": "Senior Principal Forward Deployed Engineer (Customer Engineering)",
+    "location": "Office - USA - CA - Headquarters; Office - USA - TX; Office - USA - NY",
+    "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers/job/Office---USA---CA---Headquarters/Senior-Forward-Deployed-Engineer--Customer-Engineering-_JR-020961",
+    "department": "",
+    "company": "Palo Alto Networks"
+  },
+  {
+    "id": "8220192",
+    "title": "Associate Solutions Engineer, Auth0",
+    "location": "Dublin, Ireland",
+    "url": "https://www.okta.com/company/careers/opportunity/8220192?gh_jid=8220192",
+    "department": "SE Field-321",
+    "company": "Okta"
+  },
+  {
+    "id": "8210915",
+    "title": "Senior Software Engineer (Federal)",
+    "location": "San Francisco, California",
+    "url": "https://www.okta.com/company/careers/opportunity/8210915?gh_jid=8210915",
     "department": "SW Eng - Applications-674",
     "company": "Okta"
   },
   {
-    "id": "5209653007",
-    "title": "Staff Software Development Engineer",
-    "location": "Bangalore, IND",
-    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5209653007",
+    "id": "8220634",
+    "title": "Staff Software Engineer",
+    "location": "Bengaluru, India",
+    "url": "https://www.okta.com/company/careers/opportunity/8220634?gh_jid=8220634",
+    "department": "SW Eng - Applications-674",
+    "company": "Okta"
+  },
+  {
+    "id": "8071502",
+    "title": "Staff Software Engineer ",
+    "location": "Bengaluru, India",
+    "url": "https://www.okta.com/company/careers/opportunity/8071502?gh_jid=8071502",
+    "department": "SW Eng - Core Identity-670",
+    "company": "Okta"
+  },
+  {
+    "id": "5210010007",
+    "title": "Escalation Engineer",
+    "location": "Bangalore, IND; Mohali, IND",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5210010007",
+    "department": "Support",
+    "company": "Zscaler"
+  },
+  {
+    "id": "5208421007",
+    "title": "Insider Risk Security Engineer",
+    "location": "Remote - USA",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5208421007",
+    "department": "Enterprise Security Dept",
+    "company": "Zscaler"
+  },
+  {
+    "id": "5238481007",
+    "title": "Principal Software Development Engineer (Control-Plane)",
+    "location": "San Jose, California, USA; Santa Clara, California, USA",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5238481007",
     "department": "Zero Trust Exchange",
     "company": "Zscaler"
   },
   {
-    "id": "5173177007",
-    "title": "Staff Software Development Engineer - AI Engineer",
-    "location": "Mohali, IND",
-    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5173177007",
-    "department": "Product Management",
+    "id": "5198876007",
+    "title": "Senior Sales Engineer, Majors - Central (Chicago)",
+    "location": "Remote - Illinois, USA; Remote - Wisconsin, USA",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5198876007",
+    "department": "Public Sector Field Sales",
     "company": "Zscaler"
   },
   {
-    "id": "7885786003",
-    "title": "Staff Data Engineer - Enterprise Platform, AI foundations",
-    "location": "Brno, South Moravian, Czech Republic",
-    "url": "https://www.sentinelone.com/jobs/?gh_jid=7885786003",
-    "department": "63000 Data and Governance",
+    "id": "5242467007",
+    "title": "Sr. Staff Integration Engineer (Security Platform and Data Pipelines)",
+    "location": "Remote - India",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5242467007",
+    "department": "Exposure Management & Security Operations",
+    "company": "Zscaler"
+  },
+  {
+    "id": "5219187007",
+    "title": "Staff Software Development Engineer",
+    "location": "Singapore, SGP",
+    "url": "https://job-boards.greenhouse.io/zscaler/jobs/5219187007",
+    "department": "PM - Security AI",
+    "company": "Zscaler"
+  },
+  {
+    "id": "7733953003",
+    "title": "Senior Forward Deploy Engineer (Fullstack - Java/React)",
+    "location": "United States - Remote",
+    "url": "https://www.sentinelone.com/jobs/?gh_jid=7733953003",
+    "department": "27000 Data & Analytics",
     "company": "SentinelOne"
   },
   {
-    "id": "7885785003",
-    "title": "Staff Data Engineer - Enterprise Platform, AI foundations",
-    "location": "Prague, Czech Republic",
-    "url": "https://www.sentinelone.com/jobs/?gh_jid=7885785003",
-    "department": "63000 Data and Governance",
+    "id": "7997163003",
+    "title": "Solutions Engineer, SLED (North)",
+    "location": "United States - Remote",
+    "url": "https://www.sentinelone.com/jobs/?gh_jid=7997163003",
+    "department": "46300 Solution Engineering - AMER",
     "company": "SentinelOne"
   },
   {
-    "id": "7885783003",
-    "title": "Staff Data Engineer - Enterprise Platform, AI foundations",
-    "location": "Czech Republic",
-    "url": "https://www.sentinelone.com/jobs/?gh_jid=7885783003",
-    "department": "63000 Data and Governance",
+    "id": "7834099003",
+    "title": "Staff Endpoint Software Engineer, Prompt (Python & OS Internals)",
+    "location": "United States - Remote",
+    "url": "https://www.sentinelone.com/jobs/?gh_jid=7834099003",
+    "department": "20100 Prompt Product and R&D",
     "company": "SentinelOne"
   },
   {
-    "id": "R0123092",
-    "title": "Senior Software Engineer",
+    "id": "R0107370",
+    "title": "Senior Azure DevOps Engineer",
     "location": "IND-BLR-Divyasree Technopolis",
-    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Senior-Software-Engineer_R0123092",
+    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Senior-Azure-DevOps-Engineer_R0107370-1",
     "department": "",
     "company": "LSEG/Refinitiv"
   },
   {
-    "id": "R0121185",
-    "title": "Observability Platform Engineer",
-    "location": "IND-BLR-Divyasree Technopolis",
-    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Observability-Platform-Engineer_R0121185-1",
-    "department": "",
-    "company": "LSEG/Refinitiv"
-  },
-  {
-    "id": "R0122222",
-    "title": "Senior Software Engineer",
-    "location": "IND-Bangalore-A, RMZ Infinity",
-    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Bangalore-A-RMZ-Infinity/Senior-Software-Engineer_R0122222",
-    "department": "",
-    "company": "LSEG/Refinitiv"
-  },
-  {
-    "id": "R0120982",
-    "title": "AI/ML Site Reliability Engineer",
+    "id": "R0121900",
+    "title": "Senior Reliability Engineer",
     "location": "IND-Hyderabad-CapitaLand",
-    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Hyderabad-CapitaLand/AI-ML-Site-Reliability-Engineer_R0120982-1",
+    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-Hyderabad-CapitaLand/Senior-Reliability-Engineer_R0121900",
     "department": "",
     "company": "LSEG/Refinitiv"
   },
   {
-    "id": "R0115046",
-    "title": "Lead Devops Engineer",
-    "location": "IND-BLR-Divyasree Technopolis; Bucharest - Iuliu Maniu Boulevard",
-    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Lead-Devops-Engineer_R0115046-1",
+    "id": "R0123104",
+    "title": "Senior Workday Systems Engineer",
+    "location": "IND-BLR-Divyasree Technopolis",
+    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Senior-Workday-Systems-Engineer_R0123104",
     "department": "",
     "company": "LSEG/Refinitiv"
   },
   {
-    "id": "330585",
-    "title": "Lead II, Software Development/Engineering",
-    "location": "Noida, Uttarpradesh",
-    "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Noida-Uttarpradesh/Lead-II--Software-Development-Engineering_330585-1",
+    "id": "R0123215",
+    "title": "Senior Software Engineer- Java",
+    "location": "IND-BLR-Divyasree Technopolis; IND-Hyderabad-CapitaLand",
+    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Senior-Software-Engineer--Java_R0123215",
     "department": "",
-    "company": "S&P Global Market Intelligence"
+    "company": "LSEG/Refinitiv"
   },
   {
-    "id": "321443",
-    "title": "Associate Director, Software Engineering",
-    "location": "Bengaluru, Karnataka",
-    "url": "https://spgi.wd5.myworkdayjobs.com/en-US/SPGI_Careers/job/Bengaluru-Karnataka/Senior-Software-Engineer---Data-Management_321443-1",
+    "id": "R0117320",
+    "title": "Site Reliability Engineer / DevOps Engineer",
+    "location": "IND-BLR-Divyasree Technopolis; IND-Hyderabad-CapitaLand",
+    "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/IND-BLR-Divyasree-Technopolis/Site-Reliability-Engineer---DevOps-Engineer_R0117320",
     "department": "",
-    "company": "S&P Global Market Intelligence"
+    "company": "LSEG/Refinitiv"
   },
   {
-    "id": "REF088189W",
-    "title": "Senior Software Engineer",
-    "location": "SG - Singapore",
-    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/SG---Singapore/Senior-Software-Engineer_REF088189W",
+    "id": "R32233",
+    "title": "Compute Platform Ops Engineer",
+    "location": "India, Hyderabad, DVS, SEZ-1 \u2013 Orion B4; FL 7,8,9,11 (Hyderabad - Divyasree 3); Hyderabad, IND",
+    "url": "https://factset.wd108.myworkdayjobs.com/en-US/FactSetCareers/job/India-Hyderabad-DVS-SEZ-1--Orion-B4-FL-78911-Hyderabad---Divyasree-3/Compute-Platform-Ops-Engineer_R32233",
+    "department": "",
+    "company": "FactSet"
+  },
+  {
+    "id": "R33155",
+    "title": "Software Engineer III -Python AI/ML",
+    "location": "India, Hyderabad, DVS, SEZ-1 \u2013 Orion B4; FL 7,8,9,11 (Hyderabad - Divyasree 3)",
+    "url": "https://factset.wd108.myworkdayjobs.com/en-US/FactSetCareers/job/India-Hyderabad-DVS-SEZ-1--Orion-B4-FL-78911-Hyderabad---Divyasree-3/Software-Engineer-III--Python-AI-ML_R33155",
+    "department": "",
+    "company": "FactSet"
+  },
+  {
+    "id": "R30397",
+    "title": "OMS Senior Software Engineer",
+    "location": "Norwalk, CT, USA; New York, NY, USA",
+    "url": "https://factset.wd108.myworkdayjobs.com/en-US/FactSetCareers/job/Norwalk-CT-USA/OMS-Senior-Software-Engineer_R30397-1",
+    "department": "",
+    "company": "FactSet"
+  },
+  {
+    "id": "R30349",
+    "title": "Lead Software Engineer (Knowledge of the financial trading ecosystem\u00a0/ Full Stack) Hybrid",
+    "location": "New York, NY, USA; Norwalk, CT, USA",
+    "url": "https://factset.wd108.myworkdayjobs.com/en-US/FactSetCareers/job/New-York-NY-USA/OMS-Senior-Software-Engineer_R30349",
+    "department": "",
+    "company": "FactSet"
+  },
+  {
+    "id": "R29455",
+    "title": "Principal Software Engineer - (C# and the .NET Core ecosystem, Python) - Hybrid",
+    "location": "United States, New York, 111 West 33rd Street; Norwalk, CT, USA",
+    "url": "https://factset.wd108.myworkdayjobs.com/en-US/FactSetCareers/job/United-States-New-York-111-West-33rd-Street/Principal-Software-Engineer----C--and-the-NET-Core-ecosystem--Python----Hybrid_R29455",
+    "department": "",
+    "company": "FactSet"
+  },
+  {
+    "id": "R0026908",
+    "title": "Lead - Software Engineering",
+    "location": "India - Bangalore - Karnataka",
+    "url": "https://nasdaq.wd1.myworkdayjobs.com/en-US/Global_External_Site/job/India---Bangalore---Karnataka/Lead---Software-Engineering_R0026908",
+    "department": "",
+    "company": "Nasdaq"
+  },
+  {
+    "id": "R0026827",
+    "title": "Senior Specialist, Intelligence Platform Databricks Engineer",
+    "location": "USA - Atlanta - Georgia; USA - New York City - New York",
+    "url": "https://nasdaq.wd1.myworkdayjobs.com/en-US/Global_External_Site/job/USA---Atlanta---Georgia/Senior-Specialist--Intelligence-Platform-Databricks-Engineer_R0026827",
+    "department": "",
+    "company": "Nasdaq"
+  },
+  {
+    "id": "R0026803",
+    "title": "Sr Analyst - Software Engineering (.Net developer)",
+    "location": "India - Bangalore - Karnataka",
+    "url": "https://nasdaq.wd1.myworkdayjobs.com/en-US/Global_External_Site/job/India---Bangalore---Karnataka/Sr-Analyst---Software-Engineering--Net-developer-_R0026803-1",
+    "department": "",
+    "company": "Nasdaq"
+  },
+  {
+    "id": "REF087988W",
+    "title": "Lead Network Engineer",
+    "location": "IN - Bengaluru, India",
+    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/IN---Bengaluru-India/Lead-Network-Engineer_REF087988W",
     "department": "",
     "company": "Featurespace (Visa)"
   },
   {
-    "id": "9ed8e4475224b7b1b1df5e8c840303fd",
-    "title": "QA Engineer",
-    "location": "",
-    "url": "https://jobs.radancy.com/en/job/bengaluru/qa-engineer/47123/100929230272",
-    "department": "(unconfirmed)",
-    "company": "Radancy"
+    "id": "REF088388W",
+    "title": "Systems Engineer",
+    "location": "IN - Bengaluru, India",
+    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/IN---Bengaluru-India/Systems-Engineer_REF088388W",
+    "department": "",
+    "company": "Featurespace (Visa)"
   },
   {
-    "id": "453b2248af0831c662a40b971fa19fff",
-    "title": "Senior AI Engineer",
-    "location": "",
-    "url": "https://jobs.radancy.com/en/job/vienna/senior-ai-engineer/47123/94177599840",
-    "department": "(unconfirmed)",
-    "company": "Radancy"
+    "id": "REF074767W",
+    "title": "Staff Data Engineer",
+    "location": "US - Austin, TX",
+    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/US---Austin-TX/Staff-Data-Engineer_REF074767W",
+    "department": "",
+    "company": "Featurespace (Visa)"
   },
   {
-    "id": "16c1f3593a098ad3cc06da174bef4007",
-    "title": "Detection Platform Engineer",
-    "location": "",
-    "url": "https://jobs.radancy.com/en/job/bengaluru/detection-platform-engineer/47123/98370729536",
-    "department": "(unconfirmed)",
-    "company": "Radancy"
-  },
-  {
-    "id": "84f7595998cf9f1db13869712ac99927",
-    "title": "Senior Software Engineer",
-    "location": "",
-    "url": "https://jobs.radancy.com/en/job/vienna/senior-software-engineer/47123/97786114944",
-    "department": "(unconfirmed)",
-    "company": "Radancy"
+    "id": "REF088228W",
+    "title": "Sr. SW Engineer (3 - 6 years of experience as a Full-stack Developer - .Net , React / Angular, GenAI)",
+    "location": "IN - Bengaluru, India",
+    "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/IN---Bengaluru-India/Sr-SW-Engineer--3---6-years-of-experience-as-a-Full-stack-Developer---Net---React---Angular--GenAI-_REF088228W",
+    "department": "",
+    "company": "Featurespace (Visa)"
   }
 ]
