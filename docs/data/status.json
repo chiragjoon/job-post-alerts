@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-25T10:58:43+00:00",
+  "generated_at": "2026-09-26T10:39:25+00:00",
   "companies": {
     "Figma": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 161,
+      "job_count": 163,
       "matched_count": 32,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Notion": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 129,
-      "matched_count": 27,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 128,
+      "matched_count": 26,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Lever": {
@@ -22,7 +22,7 @@
       "ats": "lever",
       "job_count": 0,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "NVIDIA": {
@@ -30,15 +30,15 @@
       "ats": "workday",
       "job_count": 2000,
       "matched_count": 1208,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Primark": {
       "status": "success",
       "ats": "smartrecruiters",
-      "job_count": 917,
+      "job_count": 919,
       "matched_count": 1,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Lunar": {
@@ -46,39 +46,39 @@
       "ats": "teamtailor",
       "job_count": 8,
       "matched_count": 3,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Stripe": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 693,
-      "matched_count": 154,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 703,
+      "matched_count": 158,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Adyen": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 209,
-      "matched_count": 62,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 212,
+      "matched_count": 63,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "GoCardless": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 27,
+      "job_count": 28,
       "matched_count": 5,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Checkout.com": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 178,
+      "job_count": 177,
       "matched_count": 40,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Modulr": {
@@ -86,15 +86,15 @@
       "ats": "greenhouse",
       "job_count": 26,
       "matched_count": 4,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Marqeta": {
       "status": "success",
       "ats": "generic",
-      "job_count": 80,
-      "matched_count": 9,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 82,
+      "matched_count": 11,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Rapyd": {
@@ -102,23 +102,23 @@
       "ats": "generic",
       "job_count": 124,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Airwallex": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 580,
+      "job_count": 578,
       "matched_count": 144,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "ClearBank": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 8,
+      "job_count": 7,
       "matched_count": 3,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Thought Machine": {
@@ -126,15 +126,15 @@
       "ats": "ashby",
       "job_count": 46,
       "matched_count": 33,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Form3": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 8,
+      "job_count": 9,
       "matched_count": 4,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "TrueLayer": {
@@ -142,7 +142,7 @@
       "ats": "greenhouse",
       "job_count": 3,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Paddle": {
@@ -150,31 +150,31 @@
       "ats": "ashby",
       "job_count": 22,
       "matched_count": 6,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Snowflake": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 352,
+      "job_count": 349,
       "matched_count": 163,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Databricks": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 885,
-      "matched_count": 398,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 888,
+      "matched_count": 401,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Datadog": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 447,
+      "job_count": 449,
       "matched_count": 137,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Confluent": {
@@ -182,79 +182,79 @@
       "ats": "ashby",
       "job_count": 20,
       "matched_count": 12,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Elastic": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 389,
-      "matched_count": 165,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 384,
+      "matched_count": 159,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "MongoDB": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 402,
-      "matched_count": 127,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 396,
+      "matched_count": 125,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Grafana Labs": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 146,
-      "matched_count": 90,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 148,
+      "matched_count": 92,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Fivetran": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 198,
-      "matched_count": 73,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 192,
+      "matched_count": 72,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Cloudflare": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 388,
-      "matched_count": 193,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 395,
+      "matched_count": 196,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Twilio": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 136,
+      "job_count": 138,
       "matched_count": 55,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "CrowdStrike": {
       "status": "success",
       "ats": "workday",
-      "job_count": 367,
-      "matched_count": 162,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 365,
+      "matched_count": 163,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Palo Alto Networks": {
       "status": "success",
       "ats": "workday",
-      "job_count": 1505,
-      "matched_count": 501,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 1507,
+      "matched_count": 503,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Okta": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 328,
-      "matched_count": 154,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 333,
+      "matched_count": 158,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Wiz": {
@@ -262,47 +262,47 @@
       "ats": "ashby",
       "job_count": 0,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Darktrace": {
       "status": "success",
       "ats": "workday",
-      "job_count": 72,
-      "matched_count": 18,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 71,
+      "matched_count": 19,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Sophos": {
       "status": "success",
       "ats": "lever",
-      "job_count": 85,
-      "matched_count": 9,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 86,
+      "matched_count": 10,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Zscaler": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 377,
-      "matched_count": 157,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 380,
+      "matched_count": 158,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "SentinelOne": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 239,
+      "job_count": 243,
       "matched_count": 105,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "LSEG/Refinitiv": {
       "status": "success",
       "ats": "workday",
-      "job_count": 708,
-      "matched_count": 243,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 704,
+      "matched_count": 242,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "ION Group": {
@@ -310,23 +310,23 @@
       "ats": "lever",
       "job_count": 89,
       "matched_count": 16,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "FactSet": {
       "status": "success",
       "ats": "workday",
-      "job_count": 89,
-      "matched_count": 28,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 90,
+      "matched_count": 30,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "S&P Global Market Intelligence": {
       "status": "success",
       "ats": "workday",
-      "job_count": 281,
-      "matched_count": 38,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 275,
+      "matched_count": 39,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Symphony": {
@@ -334,15 +334,15 @@
       "ats": "greenhouse",
       "job_count": 19,
       "matched_count": 7,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Nasdaq": {
       "status": "success",
       "ats": "workday",
       "job_count": 176,
-      "matched_count": 50,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "matched_count": 51,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "ComplyAdvantage": {
@@ -350,31 +350,31 @@
       "ats": "greenhouse",
       "job_count": 21,
       "matched_count": 1,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Onfido (Entrust)": {
       "status": "success",
       "ats": "workday",
-      "job_count": 83,
+      "job_count": 85,
       "matched_count": 23,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Quantexa": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 31,
+      "job_count": 32,
       "matched_count": 7,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Featurespace (Visa)": {
       "status": "success",
       "ats": "workday",
-      "job_count": 787,
-      "matched_count": 182,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 776,
+      "matched_count": 172,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Concirrus": {
@@ -382,7 +382,7 @@
       "ats": "generic",
       "job_count": 0,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Cytora": {
@@ -390,15 +390,15 @@
       "ats": "ashby",
       "job_count": 9,
       "matched_count": 3,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Behavox": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 43,
+      "job_count": 27,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Zego": {
@@ -406,7 +406,7 @@
       "ats": "ashby",
       "job_count": 47,
       "matched_count": 16,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Sennder": {
@@ -414,7 +414,7 @@
       "ats": "smartrecruiters",
       "job_count": 2,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Zencargo": {
@@ -422,7 +422,7 @@
       "ats": "pinpoint",
       "job_count": 13,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Kpler": {
@@ -430,31 +430,31 @@
       "ats": "lever",
       "job_count": 87,
       "matched_count": 23,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "RELEX Solutions": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 50,
+      "job_count": 47,
       "matched_count": 8,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Metapack": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 23,
-      "matched_count": 14,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 25,
+      "matched_count": 16,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Kraken": {
       "status": "success",
       "ats": "ashby",
-      "job_count": 78,
-      "matched_count": 23,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "job_count": 74,
+      "matched_count": 21,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "PolyAI": {
@@ -462,7 +462,7 @@
       "ats": "greenhouse",
       "job_count": 3,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Synthesia": {
@@ -470,7 +470,7 @@
       "ats": "ashby",
       "job_count": 50,
       "matched_count": 15,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Tractable": {
@@ -478,7 +478,7 @@
       "ats": "ashby",
       "job_count": 3,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Signal AI": {
@@ -486,7 +486,7 @@
       "ats": "ashby",
       "job_count": 3,
       "matched_count": 1,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Tray.ai": {
@@ -494,7 +494,7 @@
       "ats": "ashby",
       "job_count": 2,
       "matched_count": 2,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Cognism": {
@@ -502,23 +502,23 @@
       "ats": "greenhouse",
       "job_count": 17,
       "matched_count": 7,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Radancy": {
       "status": "success",
       "ats": "generic",
       "job_count": 65,
-      "matched_count": 5,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "matched_count": 3,
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Appian": {
       "status": "success",
       "ats": "greenhouse",
-      "job_count": 182,
+      "job_count": 174,
       "matched_count": 34,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Isidor": {
@@ -526,7 +526,7 @@
       "ats": "greenhouse",
       "job_count": 4,
       "matched_count": 2,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Fospha": {
@@ -534,7 +534,7 @@
       "ats": "greenhouse",
       "job_count": 12,
       "matched_count": 3,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Yapily": {
@@ -542,7 +542,7 @@
       "ats": "workable",
       "job_count": 10,
       "matched_count": 4,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Ravelin": {
@@ -550,7 +550,7 @@
       "ats": "workable",
       "job_count": 0,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Luminance": {
@@ -558,7 +558,7 @@
       "ats": "workable",
       "job_count": 51,
       "matched_count": 13,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Vortexa": {
@@ -566,7 +566,7 @@
       "ats": "workable",
       "job_count": 7,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     },
     "Arbolus": {
@@ -574,7 +574,7 @@
       "ats": "teamtailor",
       "job_count": 6,
       "matched_count": 0,
-      "last_success": "2026-09-25T10:58:43+00:00",
+      "last_success": "2026-09-26T10:39:25+00:00",
       "error": null
     }
   }
